@@ -10,6 +10,7 @@ function App() {
   let isOpen = useSelector(state=>state.menu.isOpen)
   const [menuActive, setMenuActive] = useState(false)
   const [width, setWidth] = useState(window.innerWidth)
+  
   window.onresize =()=>{
     setWidth(window.innerWidth)
     if (window.innerWidth<700&&isOpen) {

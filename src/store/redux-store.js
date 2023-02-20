@@ -2,7 +2,7 @@ import { configureStore, createSlice} from "@reduxjs/toolkit";
 
 let menuSlice = createSlice({
     name:"menu",
-    initialState:{isOpen:true,activeMenu:"Notes"},
+    initialState:{isOpen:window.innerWidth>700?true:false,activeMenu:"Notes"},
     reducers:{
         toggleMenu:(state)=>{
             state.isOpen = !state.isOpen

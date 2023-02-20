@@ -30,6 +30,7 @@ const SidebarItem = (props) => {
   let dispatch = useDispatch()
   let isOpen = useSelector(state=>state.menu.isOpen)
   let activeMenu = useSelector(state=>state.menu.activeMenu)
+  console.log(isOpen)
   return (
     <StyledSidebarItem title={props.title} activeMenu={activeMenu} isOpen={isOpen} 
       onClick={()=>{
